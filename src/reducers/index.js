@@ -1,30 +1,3 @@
-components:
-
-1. SongList
-2. SongDetail
-
-
-## Steps ##
-
-1. Create a action-creator:
-
-```javaScript
-
-// action creator
-export const selectSong = (song) => {
-    // return an action
-    return {
-        type: "SELECT_SONG",
-        payload: song
-    }
-};
-
-```
-
-2. Create a reducer for that action and some more reducers:
-
-```javaScript
-
 import {combinedReducers} from 'react-redux';
 
 const songsReducer = () => {
@@ -48,20 +21,3 @@ export default combinedReducers({
     songs: songsReducer,
     selectedSong: selectedSongReducer
 })
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
